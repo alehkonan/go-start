@@ -23,7 +23,7 @@ export const Dialog = forwardRef<HTMLDialogElement, PropsWithChildren<Props>>(
         className={twJoin([
           'overflow-auto',
           'backdrop:bg-transparent backdrop:backdrop-blur',
-          'animate-appear',
+          'animate-in zoom-in-0',
         ])}
         onClick={(e) => e.target === e.currentTarget && onClose()}
         {...props}
