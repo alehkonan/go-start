@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  fe:
+    build: .
+    ports:
+      - '80:80'
+
+networks:
+  default:
+    name: go-network
